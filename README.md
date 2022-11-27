@@ -9,7 +9,7 @@ The [`RTCPeerConnection`](https://developer.mozilla.org/en-US/docs/Web/API/RTCPe
 
 In order to initiate `RTCPeerConnection` the peers need to undergo a some sort of handshake process. This process is called **Signaling** and **Negotiation**. Traditionally you create a server that handles this process by creating a possible list of peers, choose with whom to connect, handle offers and answers, and finally setup the connection.
 
-However, since WebRTC does not include the standard of the handshake and protocol or technology may be used. So for this POC I decided to use [`BroadcastChannel`s](https://developer.mozilla.org/en-US/docs/Web/API/BroadcastChannel).
+However, since WebRTC does not include the standard of the handshake, any protocol or technology may be used. So for this POC I decided to use [`BroadcastChannel`s](https://developer.mozilla.org/en-US/docs/Web/API/BroadcastChannel).
 
 **BroadcastChannel** is an interface that allows communication between different browsing contexts. _(on the same origin)_
 
